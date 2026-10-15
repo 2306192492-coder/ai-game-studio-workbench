@@ -1,0 +1,212 @@
+{
+  "recorded": "2026-10-15",
+  "engine": "Unreal Engine 5.8.3",
+  "scope": "Independent UE workbench under NullRHI; not a human or GPU acceptance test",
+  "editor": {
+    "prepare": {
+      "runId": "b04614aa2b9341b4ab0e22ff35e65da9",
+      "action": "prepare",
+      "passed": true,
+      "checks": [
+        {
+          "name": "correct-project",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "new-map-created",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "engine-cube-loaded",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "map-saved",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "saved-map-loads",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "actor-present-AIStudio_Floor",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "actor-present-AIStudio_Cube",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "actor-present-AIStudio_KeyLight",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "actor-present-AIStudio_Camera",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "actor-present-AIStudio_PlayerStart",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "cube-static-mesh-bound",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "cube-scale-persisted",
+          "passed": true,
+          "detail": ""
+        }
+      ],
+      "engineVersion": "5.8.3-58210709+++UE5+Release-5.8",
+      "scope": "Editor asset/map data under NullRHI; no rendering or gameplay acceptance",
+      "created": true,
+      "actorCount": 5,
+      "map": "/Game/AIStudio/Maps/WorkbenchValidation"
+    },
+    "probe": {
+      "runId": "9f8c57c425184f65a4a52b99d615f098",
+      "action": "probe",
+      "passed": true,
+      "checks": [
+        {
+          "name": "correct-project",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "map-present",
+          "passed": true,
+          "detail": "Run prepare first; no existing map will be replaced"
+        },
+        {
+          "name": "saved-map-loads",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "actor-present-AIStudio_Floor",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "actor-present-AIStudio_Cube",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "actor-present-AIStudio_KeyLight",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "actor-present-AIStudio_Camera",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "actor-present-AIStudio_PlayerStart",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "cube-static-mesh-bound",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "cube-scale-persisted",
+          "passed": true,
+          "detail": ""
+        }
+      ],
+      "engineVersion": "5.8.3-58210709+++UE5+Release-5.8",
+      "scope": "Editor asset/map data under NullRHI; no rendering or gameplay acceptance",
+      "created": false,
+      "actorCount": 5,
+      "map": "/Game/AIStudio/Maps/WorkbenchValidation"
+    },
+    "import": {
+      "runId": "6d68680cfaf240a4a999b937eb56f398",
+      "action": "import",
+      "passed": true,
+      "checks": [
+        {
+          "name": "correct-project",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "destination-name-unused",
+          "passed": true,
+          "detail": "WorkbenchProbe"
+        },
+        {
+          "name": "assets-imported",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "imported-asset-loads",
+          "passed": true,
+          "detail": "/Game/AIStudio/Imports/FinalCheck/WorkbenchProbe.WorkbenchProbe"
+        }
+      ],
+      "engineVersion": "5.8.3-58210709+++UE5+Release-5.8",
+      "scope": "Editor asset/map data under NullRHI; no rendering or gameplay acceptance",
+      "imported": [
+        "/Game/AIStudio/Imports/FinalCheck/WorkbenchProbe.WorkbenchProbe"
+      ]
+    }
+  },
+  "windowsBuild": {
+    "passed": true,
+    "exitCode": 0,
+    "configuration": "Development",
+    "fileCount": 48,
+    "bytes": 869430900,
+    "fileInventorySha256": "9d8bbdf06f2a185f607f9653bc3113c538d2089ee7af6719a262ba27973913e4",
+    "manifestLocal": "Evidence/Unreal/build-c5d6c19399c94070bc8c098137b92792/result.json"
+  },
+  "packagedBoot": {
+    "passed": true,
+    "exitCode": 0,
+    "scope": "Verified package boot and map load under NullRHI; no GPU frame or player input proof",
+    "map": "/Game/AIStudio/Maps/WorkbenchValidation"
+  },
+  "sourceTests": {
+    "passed": 21,
+    "failed": 0,
+    "scope": "Python adapter/publication tests, not UE Automation cases"
+  },
+  "notVerified": [
+    "GPU rendering",
+    "Human input and playtesting",
+    "Performance",
+    "Project-specific UE Automation selection",
+    "C++ target compilation"
+  ],
+  "cppBuildEnvironment": {
+    "requiredSdkUnavailable": "Windows SDK 10.0.19041.0",
+    "observedCompileProbeExitCode": 6,
+    "note": "Blueprint project uses installed precompiled game target; disabling default runtime plugins can require C++ target compilation"
+  },
+  "localOnly": [
+    "Generated maps and textures",
+    "Windows package",
+    "Full engine logs",
+    "Workstation config",
+    "Model weights and third-party assets"
+  ]
+}

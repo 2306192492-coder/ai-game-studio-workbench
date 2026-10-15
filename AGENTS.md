@@ -12,9 +12,17 @@
 
 ## Hybrid mature/original assets
 
-- Read Integrations/HybridAssets/README.txt and policy.json for the asset workflow. Search Registry/fab-catalog.json before making routine assets; mature high-quality compatible assets take priority where they fit the game's art direction, era, style and license.
+- Read Integrations/HybridAssets/README.md and policy.json for the asset workflow. Search Registry/fab-catalog.json before making routine assets; mature high-quality compatible assets take priority where they fit the game's art direction, era, style and license.
 - Original forms use GPT built-in imagegen first, Hunyuan3D-2 full as the preferred local shape candidate after the verified shell comparison, and Blender for durable geometry, UVs, materials and runtime exports. Mini remains optional; compare actual outputs and choose other modeling methods when better. No default ComfyUI API startup; Hunyuan uses installed core Python modules without starting the server.
 - Catalogued/owned is not downloaded, imported or production approved. Verify each acquisition's license, formats, scale, materials, pivots and gameplay needs. UE format alone does not imply a UE-only license; explicitly UE-only assets cannot enter Unity. NoAI-marked vendor assets are used directly through ordinary authoring/import, not passed as generative AI inputs in this workflow.
 - Retain original packages, generated input pixels, raw outputs and failed candidates. Record hashes, dependencies, source URLs and license holds in Registry/asset-manifest.json. Blender refinement does not clear Tencent output territory restrictions.
 - Use Tools/asset_gate.py before promoting registered assets. Hunyuan-derived prototypes and this asset-only showroom are private local validation, not global/public release approval. HybridReleaseGuard rejects builds containing the currently registered shell outside the explicit local validation build method; use a project-specific manifest gate for future assets and release scope.
 - Tools/Build-HybridLab.ps1 builds and runs only the additive HybridAssetLab validation scene; old game scenes and EditorBuildSettings remain unchanged. Inspect the actual Windows screenshots as well as the JSON checks.
+
+## Shared Unreal adapter
+
+- Read Docs/Unreal.md. Keep Unity in Project and Unreal in UnrealProject; never convert existing games as a side effect of choosing an engine.
+- Invoke-Workbench.ps1 selects the engine. Config/unreal.local.json is local-only. The Unreal adapter uses a new process with an explicit project path and no remote execution service.
+- Prepare/Probe use NullRHI and prove only editor map/asset data. A saved map, imported asset, successful UAT process or Automation report does not certify GPU rendering or human gameplay.
+- Shared asset imports require the selected registered source file and valid hash. Import and promotion are separate stages; runtime_verified_engines must include the target engine for promotion.
+- Keep Unreal Content, Saved, Intermediate, Binaries, DDC and package outputs local. Publish source/configuration and sanitized evidence summaries only.

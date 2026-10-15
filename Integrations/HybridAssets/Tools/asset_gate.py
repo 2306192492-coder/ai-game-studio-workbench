@@ -1,7 +1,7 @@
 """Validate registered assets and inherited restrictions before promotion or release."""
 import argparse,json,hashlib,sys
 from pathlib import Path
-p=argparse.ArgumentParser();p.add_argument('--asset',required=True);p.add_argument('--scope',choices=['local','public','global'],default='local');p.add_argument('--engine',default='Unity');p.add_argument('--ai-input',action='store_true');a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--asset',required=True);p.add_argument('--scope',choices=['local','public','global'],default='local');p.add_argument('--engine',choices=['Unity','Unreal'],default='Unity');p.add_argument('--stage',choices=['import','promote'],default='promote');p.add_argument('--ai-input',action='store_true');a=p.parse_args()
 root=Path(__file__).resolve().parent.parent;reg=json.loads((root/'Registry/asset-manifest.json').read_text(encoding='utf8'));records={x['id']:x for x in reg['assets']};problems=[];seen=set()
 def check(id):
  if id in seen:return
@@ -20,6 +20,7 @@ def check(id):
   if actual!=f['sha256']:problems.append(id+': file hash changed '+f['path'])
  for dep in x.get('derived_from',[]):check(dep)
 check(a.asset)
-if records.get(a.asset,{}).get('quality_status')!='prototype_verified':problems.append(a.asset+': not verified as a runtime prototype')
-out={'asset':a.asset,'scope':a.scope,'engine':a.engine,'checked_dependencies':sorted(seen),'allowed':not problems,'problems':problems}
+if a.stage=='promote' and records.get(a.asset,{}).get('quality_status')!='prototype_verified':problems.append(a.asset+': not verified as a runtime prototype')
+if a.stage=='promote' and a.engine not in records.get(a.asset,{}).get('runtime_verified_engines',[]):problems.append(a.asset+': runtime verification missing for '+a.engine)
+out={'asset':a.asset,'scope':a.scope,'engine':a.engine,'stage':a.stage,'checked_dependencies':sorted(seen),'allowed':not problems,'problems':problems}
 print(json.dumps(out,indent=2,ensure_ascii=False));sys.exit(0 if not problems else 2)

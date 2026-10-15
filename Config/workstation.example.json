@@ -1,4 +1,5 @@
 {
+  "unity_workspace": ".",
   "unity_editor": "C:/Program Files/Unity/Hub/Editor/6000.6.3f1/Editor/Unity.exe",
   "blender": "C:/Program Files/Blender Foundation/Blender/blender.exe",
   "mixamo_import_script": "C:/Tools/blender-animation-workflow/scripts/import_mixamo.py",

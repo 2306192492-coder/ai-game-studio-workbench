@@ -1,0 +1,7 @@
+{
+  "engine_root": "C:/Program Files/Epic Games/UE_5.8",
+  "project": "UnrealProject/AIStudio.uproject",
+  "map_asset": "/Game/AIStudio/Maps/WorkbenchValidation",
+  "timeout_seconds": 600,
+  "build_configuration": "Development"
+}

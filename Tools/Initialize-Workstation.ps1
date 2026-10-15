@@ -1,8 +1,9 @@
 $ErrorActionPreference='Stop'
 $root=Split-Path -Parent $PSScriptRoot
-foreach($relative in @('Config\workstation','Integrations\HybridAssets\machine')){
+foreach($relative in @('Config\workstation','Config\unreal','Integrations\HybridAssets\machine')){
  $target=Join-Path $root ($relative+'.json')
  if($relative -eq 'Config\workstation'){$target=Join-Path $root 'Config\workstation.local.json'}
+ if($relative -eq 'Config\unreal'){$target=Join-Path $root 'Config\unreal.local.json'}
  $example=Join-Path $root ($relative+'.example.json')
  if(Test-Path -LiteralPath $target){Write-Output "Preserved existing config: $target";continue}
  $config=Get-Content -LiteralPath $example -Raw|ConvertFrom-Json

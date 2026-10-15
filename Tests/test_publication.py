@@ -16,13 +16,17 @@ class PublicationTests(unittest.TestCase):
     def test_rejects_private_inputs(self):
         for path in ['Models/model.pt', 'Config/workstation.local.json',
                      'Integrations/HybridAssets/machine.json', 'Runtime/process.json',
-                     'Project/Library/metadata.json', 'AssetsSource/vendor.fbx']:
+                     'Project/Library/metadata.json', 'AssetsSource/vendor.fbx',
+                     'Config/unreal.local.json', 'UnrealProject/Saved/settings.ini',
+                     'UnrealProject/Content/vendor.uasset', 'Build/package.pak']:
             with self.subTest(path=path):
                 self.assertTrue(module.check_file(path, '{}'))
 
     def test_rejects_credentials_without_echoing_them(self):
         value = 'gh' + 'p_' + 'x' * 36
         self.assertIn('credential-like content', module.check_file('Config/config.json', json.dumps(value)))
+        self.assertIn('credential-like content', module.check_file('UnrealProject/Config/DefaultEngine.ini', 'SecurityToken=synthetic-test-value'))
+        self.assertEqual([], module.check_file('UnrealProject/Config/DefaultEngine.ini', 'SecurityToken=\nbEnablePlugin=False\n'))
 
     def test_accepts_runtime_code(self):
         self.assertEqual([], module.check_file('Project/Assets/Studio/Runtime/Probe.cs', 'class Probe {}'))
