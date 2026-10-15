@@ -26,3 +26,12 @@
 - Prepare/Probe use NullRHI and prove only editor map/asset data. A saved map, imported asset, successful UAT process or Automation report does not certify GPU rendering or human gameplay.
 - Shared asset imports require the selected registered source file and valid hash. Import and promotion are separate stages; runtime_verified_engines must include the target engine for promotion.
 - Keep Unreal Content, Saved, Intermediate, Binaries, DDC and package outputs local. Publish source/configuration and sanitized evidence summaries only.
+
+## Optional shared NVIDIA diagnostics
+
+- Read Docs/Nvidia.md before using NVIDIA App. Reuse the current Codex host's native MCP tools for both engines; inspect the live catalog/schema. No embedded server/client, automatic registration, access-tier change or default background polling.
+- For an NVIDIA check, query the available native driver, applications, Overlay status and current-game tools read-only. Save fresh actual tool envelopes and a timezone-aware collection timestamp under ignored Evidence/Nvidia; pass that snapshot to Invoke-Workbench.ps1 -Engine Unity|Unreal -Action NvidiaCheck -NvidiaSnapshot <file>. Do not relabel old results as fresh.
+- NvidiaCheck without a snapshot only inspects file presence; it must not be reported as a successful MCP connection. MCP readiness, Overlay readiness, GPU rendering and gameplay acceptance are separate. Missing fields stay unknown; stats visibility does not provide performance measurements.
+- NvidiaCheck is optional and never a Build/Test/Verify prerequisite. No NVIDIA environment or Overlay failure must not block engine workflows. Raw snapshots, game lists, media, discovery files and host MCP configuration stay local; publish only deliberately sanitized summaries.
+- Use stats visibility controls when the task needs them. Capture, recording, replay and Highlights require an explicit capture request; general test/diagnostic requests do not authorize them. No implicit Desktop Capture, resolution change or filter mutation. Preserve returned error codes; do not post-read Overlay just to verify a mutation message.
+- Launch only exact identifiers from a fresh successful app list. Apply optimization only with opsSupported, a supported power profile/preset, and no unavailableReason (including Revert). Do not assume self-built Unity/Unreal executables support NVIDIA optimization. No driver install/rollback tools are provided by this integration.

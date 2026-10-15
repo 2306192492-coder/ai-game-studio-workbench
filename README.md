@@ -4,6 +4,8 @@
 
 **UE5 接入使用说明：[Unity / Unreal 共用工作台](Docs/Unreal.md)。** 通过 `Tools/Invoke-Workbench.ps1 -Engine Unity|Unreal` 选择引擎，两套工程独立，共用创作与素材来源管理。
 
+**可选 NVIDIA 辅助：[共用诊断与试玩辅助](Docs/Nvidia.md)。** 复用 Codex 已连接的 NVIDIA App MCP；两套引擎共用 `-Action NvidiaCheck`，整理驱动、游戏和浮层查询报告。缺少环境时跳过，不影响构建；单独运行脚本只做本地存在性检查，原生 MCP 查询由 Codex 执行。
+
 UE **5.8.3** 已实际验证场景创建与独立进程读回、测试纹理导入、Windows 打包和打包程序启动/地图加载。UE 检查采用 NullRHI，GPU 画面和真人操作仍待验证。
 
 图片主用 Codex 内置 GPT 图像生成；成熟素材合适时优先复用；原创模型经过 Blender 整理，再进入 Unity。ComfyUI 按需启用。

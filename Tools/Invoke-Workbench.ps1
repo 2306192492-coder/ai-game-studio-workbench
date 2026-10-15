@@ -1,10 +1,19 @@
 param(
  [ValidateSet('Unity','Unreal')][string]$Engine='Unity',
- [ValidateSet('Status','Start','Prepare','Probe','Import','Build','Test','Verify','Run')][string]$Action='Status',
- [string]$AssetId,[string]$Source,[string]$Destination,[string]$Filter,[string]$BuildReport,[switch]$DryRun
+ [ValidateSet('Status','Start','Prepare','Probe','Import','Build','Test','Verify','Run','NvidiaCheck')][string]$Action='Status',
+ [string]$AssetId,[string]$Source,[string]$Destination,[string]$Filter,[string]$BuildReport,
+ [string]$NvidiaSnapshot,[switch]$DryRun
 )
 $ErrorActionPreference='Stop'
 $root=Split-Path -Parent $PSScriptRoot
+if($Action -eq 'NvidiaCheck'){
+ $arguments=@((Join-Path $PSScriptRoot 'nvidia_diagnostics.py'),'--engine',$Engine)
+ if($NvidiaSnapshot){$arguments+=@('--snapshot',$NvidiaSnapshot)}
+ if($DryRun){$arguments+='--dry-run'}
+ & python @arguments
+ if($LASTEXITCODE -ne 0){throw 'NVIDIA diagnostic input is invalid; see Docs/Nvidia.md'}
+ return
+}
 if($Engine -eq 'Unreal'){
  $arguments=@((Join-Path $PSScriptRoot 'unreal_adapter.py'),$Action.ToLowerInvariant())
  foreach($pair in @(@('--asset-id',$AssetId),@('--source',$Source),@('--destination',$Destination),@('--filter',$Filter),@('--build-report',$BuildReport))){

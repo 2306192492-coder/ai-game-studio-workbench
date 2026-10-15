@@ -2,6 +2,8 @@
 
 UE5 的独立工程、统一入口及配置见 [Unity / Unreal 共用工作台](Unreal.md)。以下原 Unity 验证流程继续保留，不因新增 UE5 而更换工程或渲染管线。
 
+NVIDIA App MCP 为可选的两引擎共用模块，见 [共用诊断与试玩辅助](Nvidia.md)。已有 Codex 主机连接直接复用，不重复注册；`NvidiaCheck` 不需要引擎配置，缺少 NVIDIA 环境不阻塞工作流。
+
 ## 已跑通的版本组合
 
 2026-10-14 原机记录：Unity 6000.6.3f1、URP 17.6.0、Unity CLI 1.0.0-beta.13、Pipeline 0.8.0-exp.1、官方 Unity Codex 插件 0.1.8-beta、Blender 5.2.2 LTS、Git LFS 3.8.0。依赖锁定在 `Project/Packages`。更换版本后重新验证；工具安装位置按自己的机器填写。

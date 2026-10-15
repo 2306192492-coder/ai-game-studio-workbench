@@ -1,0 +1,31 @@
+{
+  "recorded": "2026-10-16",
+  "scope": "Optional shared workstation diagnostics; no engine render or gameplay acceptance",
+  "native_mcp": {
+    "connection": "current Codex session native tools",
+    "read_queries_succeeded": 4,
+    "driver_version": "617.42",
+    "driver_channel": "STUDIO",
+    "discovered_application_count": 3,
+    "overlay_query_succeeded": true,
+    "current_game_running": false
+  },
+  "shared_entry": {
+    "Unity": "ready from fresh supplied native snapshot",
+    "Unreal": "ready from the same fresh supplied native snapshot",
+    "engine_processes_launched": false
+  },
+  "local_checks": {
+    "python_tests_passed": 33,
+    "nvidia_tests_included": 12,
+    "powershell_syntax": "passed",
+    "both_routes_without_engine_config": "passed in isolated fixture",
+    "no_hardware_optional_skip": "passed with simulated absent environment",
+    "overlay_failure_partial_report": "passed with synthetic error",
+    "stale_snapshot_rejection": "passed with synthetic timestamps"
+  },
+  "settings_changed": false,
+  "capture_started": false,
+  "performance_metrics_collected": false,
+  "raw_snapshots_and_game_lists_published": false
+}
