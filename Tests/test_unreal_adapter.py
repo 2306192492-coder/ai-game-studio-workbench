@@ -104,7 +104,7 @@ class UnrealAdapterTests(unittest.TestCase):
             report = dict(action='build', passed=True, configuration='Development', files=[dict(path='AIStudio.exe', sha256=adapter.file_sha256(executable))])
             report_file = root / 'result.json'
             report_file.write_text(json.dumps(report), encoding='utf8')
-            self.assertEqual(executable, adapter.verified_package(report_file, 'AIStudio'))
+            self.assertTrue(executable.samefile(adapter.verified_package(report_file, 'AIStudio')))
             executable.write_bytes(b'changed')
             with self.assertRaises(ValueError):
                 adapter.verified_package(report_file, 'AIStudio')
