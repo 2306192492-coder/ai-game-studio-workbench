@@ -1,0 +1,11 @@
+{
+  "primary": "Codex built-in GPT image generation",
+  "mode": "built-in image_gen",
+  "fallback": "Local ComfyUI API at 127.0.0.1:8188",
+  "fallbackAutoStart": false,
+  "fallbackPolicy": "Use when requested or after explaining primary unavailability; do not silently substitute",
+  "preserveExistingAssets": true,
+  "primaryValidationAsset": "Project/Assets/Studio/Textures/GPT-primary-landscape.png",
+  "backupValidationAsset": "Project/Assets/Studio/Textures/AIStudio-generated.png",
+  "futureComfyOutput": "Project/Assets/Studio/Textures/ComfyUI-backup-generated.png"
+}

@@ -1,0 +1,11 @@
+{
+  "visual_primary": "Codex built-in GPT image generation",
+  "comfyui": {"role": "optional fallback", "autostart": false},
+  "asset_selection": "Choose mature compatible assets first when they meet the game's art direction and quality. Compare original candidates on actual output, not tool novelty.",
+  "hunyuan_full": {"role": "preferred local form candidate after the same-image shell comparison and user steering", "server_required": false, "backend": "read-only installed Comfy core modules", "minimum_output_stage": "Blender refinement, UV/materials, fresh import and Unity Windows validation", "territory_exclusions": ["EU", "UK", "South Korea"]},
+  "hunyuan_mini": {"role": "optional lightweight candidate; not selected for the shell prop", "quality_policy": "keep evidence and switch tools when actual output is inferior"},
+  "characters": "Prefer licensed production topology and skeleton. Do not promote Mini meshes as rigged characters without separate topology, skinning, deformation and retargeting proof.",
+  "fab": {"download": "authenticated Fab UI or Epic Games Launcher", "no_credentials_in_scripts": true, "license_per_acquisition": true, "ue_format_is_not_ue_only_license": true, "noai_input_default": false},
+  "promotion": ["source and hashes", "license and usable formats", "scale and pivot", "mesh and materials", "fresh Blender import and multiview", "Unity 6 URP import", "Windows runtime evidence", "separate project-specific visual and gameplay acceptance"],
+  "preserve": ["existing projects", "original packages", "source images", "model checkpoints", "failed candidates and evidence"]
+}

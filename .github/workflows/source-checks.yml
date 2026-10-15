@@ -1,0 +1,24 @@
+name: Source and publication checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  source-checks:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python Tools/check_repository.py
+      - run: python -m unittest discover -s Tests -v
+      - name: Parse PowerShell scripts without running them
+        shell: pwsh
+        run: |
+          $failures=@()
+          Get-ChildItem Tools,Integrations -Filter *.ps1 -Recurse | ForEach-Object {
+            $tokens=$null; $errors=$null
+            [void][System.Management.Automation.Language.Parser]::ParseFile($_.FullName,[ref]$tokens,[ref]$errors)
+            $failures+=@($errors)
+          }
+          if($failures.Count){$failures | Format-List; throw 'PowerShell syntax errors'}

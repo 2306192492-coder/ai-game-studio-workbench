@@ -1,0 +1,10 @@
+var assembly=typeof(UnityEditor.Editor).Assembly;
+var flags=System.Reflection.BindingFlags.Public|System.Reflection.BindingFlags.NonPublic|System.Reflection.BindingFlags.Static|System.Reflection.BindingFlags.FlattenHierarchy;
+var container=assembly.GetType("UnityEditor.PackageManager.UI.Internal.ServicesContainer");
+var managerType=assembly.GetType("UnityEditor.PackageManager.UI.Internal.AssetStoreDownloadManager");
+var instance=container.GetProperty("instance",flags).GetValue(null);
+var resolve=container.GetMethods().First(m=>m.Name=="Resolve"&&m.IsGenericMethodDefinition&&m.GetParameters().Length==0);
+var manager=resolve.MakeGenericMethod(managerType).Invoke(instance,null);
+var operation=managerType.GetMethod("GetDownloadOperation").Invoke(manager,new object[]{(long?)372864});
+if(operation==null)return new{productId=372864,operationExists=false};
+return operation.GetType().GetProperties(System.Reflection.BindingFlags.Public|System.Reflection.BindingFlags.Instance).Where(p=>new[]{"state","isInProgress","progressPercentage","downloadedBytes","totalBytes","isProgressTrackable","isInPause"}.Contains(p.Name)).ToDictionary(p=>p.Name,p=>p.GetValue(operation)?.ToString());

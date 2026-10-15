@@ -1,0 +1,1 @@
+{"name":"AIStudio.Tests","references":["AIStudio.Runtime","AIStudio.Editor","Unity.RenderPipelines.Core.Runtime","Unity.RenderPipelines.Universal.Runtime"],"includePlatforms":["Editor"],"optionalUnityReferences":["TestAssemblies"]}

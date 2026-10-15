@@ -1,0 +1,38 @@
+{
+  "mixamo": {
+    "source": "https://www.mixamo.com/",
+    "character": "X Bot",
+    "animation": "Walking / Walking With A Swagger",
+    "fps": 30,
+    "frames": 32,
+    "skin": "With Skin",
+    "inPlace": true,
+    "mirror": false,
+    "armSpace": 50,
+    "overdrive": 50,
+    "sha256": "d7f8d491006d7d444812a595e25a8553b3190539a12f1eabbac2633b20b910ca",
+    "license": "Adobe Mixamo terms; not CC0; raw files excluded from Git"
+  },
+  "polyhaven": {
+    "source": "https://polyhaven.com/a/american_walnut_veneer",
+    "license": "CC0",
+    "resolution": "1k",
+    "credit": "Powered by Poly Haven"
+  },
+  "stabilityai": {
+    "source": "https://huggingface.co/stabilityai/sd-turbo",
+    "purpose": "Local image-inference validation",
+    "licenseFile": "Models/diffusers/sd-turbo/LICENSE.md",
+    "commercialUse": "See the model card and applicable Stability AI license before commercial deployment"
+  },
+  "assetStore": {
+    "source": "https://assetstore.unity.com/packages/essentials/tutorial-projects/shader-graph-examples-vfx-sample-project-372864",
+    "title": "Shader Graph Examples | VFX Sample Project",
+    "publisher": "Unity Technologies",
+    "price": 0,
+    "userExplicitlyApprovedEula": true,
+    "acquisitionStatus": "acquired_in_browser_open_in_unity_visible",
+    "downloadStatus": "completed_verified_unitypackage",
+    "sha256": "037867aa08d989e88b66b2e7fbcae8d8d0b6bb2d4f153e7da161845270a53b6b"
+  }
+}

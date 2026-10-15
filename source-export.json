@@ -1,0 +1,622 @@
+{
+  "sourceCommit": "3b654b45d10baabb81dcfb67be9b817c785ff086",
+  "source": "AIStudio independent toolchain",
+  "exported": "2026-10-15",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "originalSha256": "f4c82e9fa7e3a557d192cea0f652528c710e1fd60c32bf652566c50bd9fb9483",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "f4c82e9fa7e3a557d192cea0f652528c710e1fd60c32bf652566c50bd9fb9483"
+    },
+    {
+      "path": "AGENTS.md",
+      "originalSha256": "bd236dd4d56c692e823ada1f0a30a3413be5ffd776fd529ad4551d68206dbf0f",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "bd236dd4d56c692e823ada1f0a30a3413be5ffd776fd529ad4551d68206dbf0f"
+    },
+    {
+      "path": "Config/asset-sources.json",
+      "originalSha256": "cf4fde39784890055cd20b439891110ecd4b420c2f2c71ba686b4bf9ca4763bb",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "90e3f3821dc4580187f532d2d3338fd91f64d6a0a603f5c8081512cb4364afca"
+    },
+    {
+      "path": "Config/gpt-validation-prompt.txt",
+      "originalSha256": "6d73d4233c8bb2412a2f82fb7380646d230c25f024efa5641cfcfa2a61688b4f",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "6d73d4233c8bb2412a2f82fb7380646d230c25f024efa5641cfcfa2a61688b4f"
+    },
+    {
+      "path": "Config/image-generation.json",
+      "originalSha256": "0d484f3afd5a4ddcd13bc62bf89ed099d22053b0d46d09aa153b8ba0d9d4f098",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "0d484f3afd5a4ddcd13bc62bf89ed099d22053b0d46d09aa153b8ba0d9d4f098"
+    },
+    {
+      "path": "Integrations/HybridAssets/Tools/Build-HybridLab.ps1",
+      "originalSha256": "4c63bd61c188fdde3ed62e1c9bf05112da2e4b2510d5a20d54a2fb7d8ba3a988",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "4c63bd61c188fdde3ed62e1c9bf05112da2e4b2510d5a20d54a2fb7d8ba3a988"
+    },
+    {
+      "path": "Integrations/HybridAssets/Tools/New-HunyuanProp.ps1",
+      "originalSha256": "8ddf56a039a7333b310fe7ba0c29d08d4dcf99fee45443d78b0b0ef8d8b82269",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "8ddf56a039a7333b310fe7ba0c29d08d4dcf99fee45443d78b0b0ef8d8b82269"
+    },
+    {
+      "path": "Integrations/HybridAssets/Tools/Verify-HybridAssets.ps1",
+      "originalSha256": "0f2d534b7bd30dc6ba4257aa53f61f21cd303496e1cdb2f8dc10444a342be10f",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "0f2d534b7bd30dc6ba4257aa53f61f21cd303496e1cdb2f8dc10444a342be10f"
+    },
+    {
+      "path": "Integrations/HybridAssets/Tools/asset_gate.py",
+      "originalSha256": "7c1e219430acb69becd08d774ec3ac597491dbb68e376285fc1667d827681030",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "7c1e219430acb69becd08d774ec3ac597491dbb68e376285fc1667d827681030"
+    },
+    {
+      "path": "Integrations/HybridAssets/Tools/clean_shell_components.py",
+      "originalSha256": "7dda2ec281cb4afba348a3922423134410147b34f4233283c9353f048e2619fb",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "7dda2ec281cb4afba348a3922423134410147b34f4233283c9353f048e2619fb"
+    },
+    {
+      "path": "Integrations/HybridAssets/Tools/diagnose_shell.py",
+      "originalSha256": "d9b100b352229c84ac15918b546864d548e2ff7a5adca006149626a67457879e",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "d9b100b352229c84ac15918b546864d548e2ff7a5adca006149626a67457879e"
+    },
+    {
+      "path": "Integrations/HybridAssets/Tools/find_assets.py",
+      "originalSha256": "f4c8e422340caded181075483f563852627cfa19b2bc4c5317faeb74b152eb96",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "f4c8e422340caded181075483f563852627cfa19b2bc4c5317faeb74b152eb96"
+    },
+    {
+      "path": "Integrations/HybridAssets/Tools/hunyuan_prop.py",
+      "originalSha256": "00cf7867197a5d7bb4b3637028bfd0384f2de0203ab1fcdeac75300d26a6d618",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "00cf7867197a5d7bb4b3637028bfd0384f2de0203ab1fcdeac75300d26a6d618"
+    },
+    {
+      "path": "Integrations/HybridAssets/Tools/import_fab_package.py",
+      "originalSha256": "62a16ed78249a8b80e8742d61943afdbf667475156b3233f96ee6381154b99b9",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "62a16ed78249a8b80e8742d61943afdbf667475156b3233f96ee6381154b99b9"
+    },
+    {
+      "path": "Integrations/HybridAssets/Tools/record_manifest.py",
+      "originalSha256": "ecaca31235129527ea34af3d8bd13fff444c0f6f4862392858b9a1a97174e5e0",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "ecaca31235129527ea34af3d8bd13fff444c0f6f4862392858b9a1a97174e5e0"
+    },
+    {
+      "path": "Integrations/HybridAssets/Tools/refine_shell.py",
+      "originalSha256": "8e10bc15162dcd22a8840987d6453b7cca10c6169de7ec885de9c53486d9fb99",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "8e10bc15162dcd22a8840987d6453b7cca10c6169de7ec885de9c53486d9fb99"
+    },
+    {
+      "path": "Integrations/HybridAssets/Tools/refine_shell_full.py",
+      "originalSha256": "020fc2cdcdeaae228794041380ffb6f2072065aadd90be07ea0e5e4bcfc8de75",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "020fc2cdcdeaae228794041380ffb6f2072065aadd90be07ea0e5e4bcfc8de75"
+    },
+    {
+      "path": "Integrations/HybridAssets/policy.json",
+      "originalSha256": "41e0dafd8a163502ff9e5aa8c25012aa4114c5283e8892d2e2c482572f7c173a",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "41e0dafd8a163502ff9e5aa8c25012aa4114c5283e8892d2e2c482572f7c173a"
+    },
+    {
+      "path": "Project/Assets/HybridAssets/Editor/HybridSetup.cs",
+      "originalSha256": "6c13e7ffd9f63b98c0bc6544f95e30e7db99dbfd9285a81b1820bae739b48258",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "6c13e7ffd9f63b98c0bc6544f95e30e7db99dbfd9285a81b1820bae739b48258"
+    },
+    {
+      "path": "Project/Assets/HybridAssets/Editor/HybridSetup.cs.meta",
+      "originalSha256": "22d54fa2b6f9c51ec21eba610a37059993f6ee3eed0c5df4b6cbf02475ccec6f",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "22d54fa2b6f9c51ec21eba610a37059993f6ee3eed0c5df4b6cbf02475ccec6f"
+    },
+    {
+      "path": "Project/Assets/HybridAssets/Runtime/HybridProbe.cs",
+      "originalSha256": "858ff24849039b5a1bc4d58aac60ea1fce59a35f096c1ce81cd5db34892f6d1d",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "858ff24849039b5a1bc4d58aac60ea1fce59a35f096c1ce81cd5db34892f6d1d"
+    },
+    {
+      "path": "Project/Assets/HybridAssets/Runtime/HybridProbe.cs.meta",
+      "originalSha256": "f8010f3fa649e2ce03cee0e657736d7f70d62f7631f9ca07b969b6a4a0c43de6",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "f8010f3fa649e2ce03cee0e657736d7f70d62f7631f9ca07b969b6a4a0c43de6"
+    },
+    {
+      "path": "Project/Assets/Studio/Editor/AIStudio.Editor.asmdef",
+      "originalSha256": "7c344975411a404ede0e45c3188b1a9dd73c75f7e42c522e3ff26a8e8d7325b8",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "7c344975411a404ede0e45c3188b1a9dd73c75f7e42c522e3ff26a8e8d7325b8"
+    },
+    {
+      "path": "Project/Assets/Studio/Editor/AIStudio.Editor.asmdef.meta",
+      "originalSha256": "85593d0037a99dace3fff8945de5a376eeebceeeb0a75bfabe4fae38063aee87",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "85593d0037a99dace3fff8945de5a376eeebceeeb0a75bfabe4fae38063aee87"
+    },
+    {
+      "path": "Project/Assets/Studio/Editor/StudioSetup.cs",
+      "originalSha256": "988d52257edafce8e19b8d68ea4daba20b7d3d6a32f900ad596e5d31ded31488",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "988d52257edafce8e19b8d68ea4daba20b7d3d6a32f900ad596e5d31ded31488"
+    },
+    {
+      "path": "Project/Assets/Studio/Editor/StudioSetup.cs.meta",
+      "originalSha256": "687d3ee9ab571aebbfb866b6e7eddf98d0eaa7435ce92ac9d1ff0e9562cd6e90",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "687d3ee9ab571aebbfb866b6e7eddf98d0eaa7435ce92ac9d1ff0e9562cd6e90"
+    },
+    {
+      "path": "Project/Assets/Studio/Runtime/AIStudio.Runtime.asmdef",
+      "originalSha256": "918ba6128870a7a0609789999b13839bd04b194c5b5ca52f6730625ba35a725d",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "918ba6128870a7a0609789999b13839bd04b194c5b5ca52f6730625ba35a725d"
+    },
+    {
+      "path": "Project/Assets/Studio/Runtime/AIStudio.Runtime.asmdef.meta",
+      "originalSha256": "e0e5915e23a28a623a6deba739d8fd74a69e708fb035627d71cbb8282c03251a",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "e0e5915e23a28a623a6deba739d8fd74a69e708fb035627d71cbb8282c03251a"
+    },
+    {
+      "path": "Project/Assets/Studio/Runtime/StudioProbe.cs",
+      "originalSha256": "2988d5b0eddf0de07a5d9767a8a0e7e2833340f78c38ad6409c167d3672bc1c2",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "2988d5b0eddf0de07a5d9767a8a0e7e2833340f78c38ad6409c167d3672bc1c2"
+    },
+    {
+      "path": "Project/Assets/Studio/Runtime/StudioProbe.cs.meta",
+      "originalSha256": "1310c9e9458f77101269b8b260ae9b14ea1e0ab5b24589bcf26e6fdcaca1eabb",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "1310c9e9458f77101269b8b260ae9b14ea1e0ab5b24589bcf26e6fdcaca1eabb"
+    },
+    {
+      "path": "Project/Assets/Studio/Tests/Editor/AIStudio.Tests.asmdef",
+      "originalSha256": "4ee115b078970b6c37bfc2db4fed75783de9b61443a990372d05ee4cb08ce593",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "4ee115b078970b6c37bfc2db4fed75783de9b61443a990372d05ee4cb08ce593"
+    },
+    {
+      "path": "Project/Assets/Studio/Tests/Editor/AIStudio.Tests.asmdef.meta",
+      "originalSha256": "3484971d8f674b854caf7db323c0af56cca2eb55c9392c6e43840e52668a746d",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "3484971d8f674b854caf7db323c0af56cca2eb55c9392c6e43840e52668a746d"
+    },
+    {
+      "path": "Project/Assets/Studio/Tests/Editor/StudioTests.cs",
+      "originalSha256": "bf1231b9758a14c1b4120075913bdea951774def2aa1675e0f247ac4af6aa51d",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "bf1231b9758a14c1b4120075913bdea951774def2aa1675e0f247ac4af6aa51d"
+    },
+    {
+      "path": "Project/Assets/Studio/Tests/Editor/StudioTests.cs.meta",
+      "originalSha256": "8d23f82120928edd32fe9d3494ab3d6f678d2ef18e66aaf0e49e91aa2e1f12cd",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "8d23f82120928edd32fe9d3494ab3d6f678d2ef18e66aaf0e49e91aa2e1f12cd"
+    },
+    {
+      "path": "Project/Packages/manifest.json",
+      "originalSha256": "c343ff2ce15e0732e36fcc8819419c88c233ae6d7e9870db143a1d9a1a5d580e",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "c343ff2ce15e0732e36fcc8819419c88c233ae6d7e9870db143a1d9a1a5d580e"
+    },
+    {
+      "path": "Project/Packages/packages-lock.json",
+      "originalSha256": "8ac092e37006c8d8c9baa3fb6bbccfe77ac5cf36d301dbd43d40dd9eb3c10e2d",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "8ac092e37006c8d8c9baa3fb6bbccfe77ac5cf36d301dbd43d40dd9eb3c10e2d"
+    },
+    {
+      "path": "Project/ProjectSettings/AudioManager.asset",
+      "originalSha256": "aeedeb3243f07b61dbbe854aa08b5ef6f0b5274dd9852ad9f6129dde3e105a31",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "aeedeb3243f07b61dbbe854aa08b5ef6f0b5274dd9852ad9f6129dde3e105a31"
+    },
+    {
+      "path": "Project/ProjectSettings/ClusterInputManager.asset",
+      "originalSha256": "40e65dd214bf254955d2c8829ca8ce2130fd3510485560ce012e9a1ddd93e623",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "40e65dd214bf254955d2c8829ca8ce2130fd3510485560ce012e9a1ddd93e623"
+    },
+    {
+      "path": "Project/ProjectSettings/DynamicsManager.asset",
+      "originalSha256": "bf017b547bb77ce3443dd5287ddf2516a74fd167f4f2ee5d798340694f51776d",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "bf017b547bb77ce3443dd5287ddf2516a74fd167f4f2ee5d798340694f51776d"
+    },
+    {
+      "path": "Project/ProjectSettings/EditorBuildSettings.asset",
+      "originalSha256": "9d3ca0b788402e0132003df4cfc2d8e9ba9e99a09f1cd08c81dd91d1f9200128",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "9d3ca0b788402e0132003df4cfc2d8e9ba9e99a09f1cd08c81dd91d1f9200128"
+    },
+    {
+      "path": "Project/ProjectSettings/EditorSettings.asset",
+      "originalSha256": "bbedcf93c32bca12eaba9ed61189ab13f064217e9f2984a66772719fa73c56b5",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "bbedcf93c32bca12eaba9ed61189ab13f064217e9f2984a66772719fa73c56b5"
+    },
+    {
+      "path": "Project/ProjectSettings/GraphicsSettings.asset",
+      "originalSha256": "1aabaa3226af3fdfdcd1bf936ff3ebf164870bf04b2fe230138634985ca62b1c",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "1aabaa3226af3fdfdcd1bf936ff3ebf164870bf04b2fe230138634985ca62b1c"
+    },
+    {
+      "path": "Project/ProjectSettings/InputManager.asset",
+      "originalSha256": "7a1bb836a1008d26d0860d143e9d9df7ca41731d30a72901b518063819c62df2",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "7a1bb836a1008d26d0860d143e9d9df7ca41731d30a72901b518063819c62df2"
+    },
+    {
+      "path": "Project/ProjectSettings/MemorySettings.asset",
+      "originalSha256": "1e8379a461b10ae09f3f696911088c16875d63e87ed5f2d95df9e1892703f9fd",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "1e8379a461b10ae09f3f696911088c16875d63e87ed5f2d95df9e1892703f9fd"
+    },
+    {
+      "path": "Project/ProjectSettings/MultiplayerManager.asset",
+      "originalSha256": "aba89fd1a1ddad182727ad82727e536d27372e90328a8196da2a4560398983dd",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "aba89fd1a1ddad182727ad82727e536d27372e90328a8196da2a4560398983dd"
+    },
+    {
+      "path": "Project/ProjectSettings/NavMeshAreas.asset",
+      "originalSha256": "80106cfa7e6181a1928b142c075f3e510d527441e3d79bc83590e4ac91e7cd66",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "80106cfa7e6181a1928b142c075f3e510d527441e3d79bc83590e4ac91e7cd66"
+    },
+    {
+      "path": "Project/ProjectSettings/PackageManagerSettings.asset",
+      "originalSha256": "f281d96e785df430d30ce0a515f4fe5c625ef44467125879f4b9f4cb087e1578",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "f281d96e785df430d30ce0a515f4fe5c625ef44467125879f4b9f4cb087e1578"
+    },
+    {
+      "path": "Project/ProjectSettings/Physics2DSettings.asset",
+      "originalSha256": "d57a0fe55659c33879e8b70bc01c5ea9cdf082069dab649905c6c5138531e6eb",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "d57a0fe55659c33879e8b70bc01c5ea9cdf082069dab649905c6c5138531e6eb"
+    },
+    {
+      "path": "Project/ProjectSettings/PhysicsCoreProjectSettings2D.asset",
+      "originalSha256": "bedc5339a832c60dc3f11b84abc4f4384dbfa20b0cd9ad6c444b907e751fc35e",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "bedc5339a832c60dc3f11b84abc4f4384dbfa20b0cd9ad6c444b907e751fc35e"
+    },
+    {
+      "path": "Project/ProjectSettings/PresetManager.asset",
+      "originalSha256": "29c125923fe6e29f90190d4fce1c82d660e7051546e2c9d02908d18c9cf2436c",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "29c125923fe6e29f90190d4fce1c82d660e7051546e2c9d02908d18c9cf2436c"
+    },
+    {
+      "path": "Project/ProjectSettings/ProjectAuditorSettings.asset",
+      "originalSha256": "9e68444b9bda981e2927a98df9edf69ea88362f0c6b7f3c81b39b9d515d2a416",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "9e68444b9bda981e2927a98df9edf69ea88362f0c6b7f3c81b39b9d515d2a416"
+    },
+    {
+      "path": "Project/ProjectSettings/ProjectSettings.asset",
+      "originalSha256": "f31d9061ec6ffb19fd7144e2e85444d2cf8744b5817553480c140223e09c141e",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "f31d9061ec6ffb19fd7144e2e85444d2cf8744b5817553480c140223e09c141e"
+    },
+    {
+      "path": "Project/ProjectSettings/ProjectVersion.txt",
+      "originalSha256": "87289075c168cdd875e46a5fc308d15c686987848a70c7ce47faf40196ac0e20",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "87289075c168cdd875e46a5fc308d15c686987848a70c7ce47faf40196ac0e20"
+    },
+    {
+      "path": "Project/ProjectSettings/QualitySettings.asset",
+      "originalSha256": "600bee1dd55cc67dbdfdcf320395635175c0e762760a8504cceaa080a18a4eba",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "600bee1dd55cc67dbdfdcf320395635175c0e762760a8504cceaa080a18a4eba"
+    },
+    {
+      "path": "Project/ProjectSettings/SceneTemplateSettings.json",
+      "originalSha256": "bb9098b3bfcde78d93e264b96f7b77b5430e64e8c57a7aad7f5a5d9c3945e16a",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "bb9098b3bfcde78d93e264b96f7b77b5430e64e8c57a7aad7f5a5d9c3945e16a"
+    },
+    {
+      "path": "Project/ProjectSettings/ShaderGraphSettings.asset",
+      "originalSha256": "cdba1e5d65bcf6e3269d76ed3e60b6c21f98322002996642c9d74f1eb89f6b91",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "cdba1e5d65bcf6e3269d76ed3e60b6c21f98322002996642c9d74f1eb89f6b91"
+    },
+    {
+      "path": "Project/ProjectSettings/TagManager.asset",
+      "originalSha256": "23fc56b484aa3d7edf5914cd3591f7a823ccef5e3f3496f8a51f30388ead63dc",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "23fc56b484aa3d7edf5914cd3591f7a823ccef5e3f3496f8a51f30388ead63dc"
+    },
+    {
+      "path": "Project/ProjectSettings/TimeManager.asset",
+      "originalSha256": "1a83e54adbbda7c9f4851103a0c6ab7f6448a3343d4ea5b7620452fa08416ecd",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "1a83e54adbbda7c9f4851103a0c6ab7f6448a3343d4ea5b7620452fa08416ecd"
+    },
+    {
+      "path": "Project/ProjectSettings/URPProjectSettings.asset",
+      "originalSha256": "c317fe22b9488785c0611f0642429922e5d324430d929bffb41648130f30c218",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "c317fe22b9488785c0611f0642429922e5d324430d929bffb41648130f30c218"
+    },
+    {
+      "path": "Project/ProjectSettings/UnityConnectSettings.asset",
+      "originalSha256": "7f2112b8c6ea0885dcc72b312c9726ffcd909f2e89d1eead61889274a4e5d1c0",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "7f2112b8c6ea0885dcc72b312c9726ffcd909f2e89d1eead61889274a4e5d1c0"
+    },
+    {
+      "path": "Project/ProjectSettings/VFXManager.asset",
+      "originalSha256": "f066c6483919961332415ee64204f74fe52f38c02e82892eb02b7a5b2e381f0e",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "f066c6483919961332415ee64204f74fe52f38c02e82892eb02b7a5b2e381f0e"
+    },
+    {
+      "path": "Project/ProjectSettings/VersionControlSettings.asset",
+      "originalSha256": "e7bda45bf7a394745fee1316e6c71fa676004d591ad1f3aa247fd3e4ceb86071",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "e7bda45bf7a394745fee1316e6c71fa676004d591ad1f3aa247fd3e4ceb86071"
+    },
+    {
+      "path": "Project/ProjectSettings/XRSettings.asset",
+      "originalSha256": "edd2beb4a2e388312b4b7da241aa51070434005d82c59363f1237dd2e567585f",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "edd2beb4a2e388312b4b7da241aa51070434005d82c59363f1237dd2e567585f"
+    },
+    {
+      "path": "Run-Validation-Demo.cmd",
+      "originalSha256": "bb11c284c4a2f5c802d538d6bc0e89b538b1c78fba6f049af2e7bb44bb624f06",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "bb11c284c4a2f5c802d538d6bc0e89b538b1c78fba6f049af2e7bb44bb624f06"
+    },
+    {
+      "path": "Start-AIStudio.cmd",
+      "originalSha256": "7a599f3076732382f6625c0020debb289b3d34ef83cbf15519d2e6b5ce8ee9d7",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "7a599f3076732382f6625c0020debb289b3d34ef83cbf15519d2e6b5ce8ee9d7"
+    },
+    {
+      "path": "Tools/Build-Studio.ps1",
+      "originalSha256": "a68f82190ace2e44cb25f846cf34c905ccdecb165ed2a99ed80e26ce4fe10e6a",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "a68f82190ace2e44cb25f846cf34c905ccdecb165ed2a99ed80e26ce4fe10e6a"
+    },
+    {
+      "path": "Tools/Import-Mixamo.ps1",
+      "originalSha256": "745d0950ca1ae57d616ef95a0a9c33801338f86bb58ebe5b58aca86ecc7a5b32",
+      "adaptedForPublicExport": true,
+      "publicGitSha256": "3a12933cea82e399b18fe3a31acc36990b972e0b7d4a8cfb9c0c7544007c5d7f"
+    },
+    {
+      "path": "Tools/Record-BuildHashes.ps1",
+      "originalSha256": "e5d1e91b4334c44b33ab6d2bea3095a760c792f4c3fa9d531bdb79dfd67b93fd",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "e5d1e91b4334c44b33ab6d2bea3095a760c792f4c3fa9d531bdb79dfd67b93fd"
+    },
+    {
+      "path": "Tools/Restore-LocalAssets.ps1",
+      "originalSha256": "66d55a74d99b32aefa3de852840299cf032a330ad33904e7052bca60e68d9b0d",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "66d55a74d99b32aefa3de852840299cf032a330ad33904e7052bca60e68d9b0d"
+    },
+    {
+      "path": "Tools/Run-WindowsQA.ps1",
+      "originalSha256": "70cbd0ae3d63bbd45704d689a60db6aa39253a20b5db3a1448fec3e96da7ff98",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "70cbd0ae3d63bbd45704d689a60db6aa39253a20b5db3a1448fec3e96da7ff98"
+    },
+    {
+      "path": "Tools/Start-AIStudio.ps1",
+      "originalSha256": "86bffab1e772aaa2cd6ce7cc3af70b1362aa97d126a52cf26d5468f0858bd149",
+      "adaptedForPublicExport": true,
+      "publicGitSha256": "f624dc10578617d86774d7d164bee49ef71f28efd8bd1f8bb231b69fb553f2e0"
+    },
+    {
+      "path": "Tools/Start-ComfyUI.ps1",
+      "originalSha256": "215243e30d3523f37896d8e9ca9c8e3a5f0083aa79813ae24cd9737c946d1dda",
+      "adaptedForPublicExport": true,
+      "publicGitSha256": "84dbb411549ca85d81130b6d3aa61d6ac53c394cda426e4d64d9158f356f2319"
+    },
+    {
+      "path": "Tools/Start-UnityPipeline.ps1",
+      "originalSha256": "a0ecbadb607fa81fdecd252bd3ffd238d6253a6e757ebfd4136013a0c4cbf38c",
+      "adaptedForPublicExport": true,
+      "publicGitSha256": "5b529dab809075f39f135300cd3c89d5295647dbf48dbe459b1406190109f8da"
+    },
+    {
+      "path": "Tools/Stop-AIStudio.ps1",
+      "originalSha256": "305c636e9388ea66f89cc4897a9e0421da856f5c4552f9a9bb754f73f804331f",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "305c636e9388ea66f89cc4897a9e0421da856f5c4552f9a9bb754f73f804331f"
+    },
+    {
+      "path": "Tools/Verify-AIStudio.ps1",
+      "originalSha256": "041889ea3946f6b23c17cb6acccdc315e5f4d63da23a8be29082db2338221042",
+      "adaptedForPublicExport": true,
+      "publicGitSha256": "9bcc920befc5f709667385d3e976bb870107d7f01b754ce617e3c54afaf78b4a"
+    },
+    {
+      "path": "Tools/Verify-Lfs.ps1",
+      "originalSha256": "a82bf3edf39d86b682b0be2f44686a4420d59f2d92e9f531e6e1694054ba15bb",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "a82bf3edf39d86b682b0be2f44686a4420d59f2d92e9f531e6e1694054ba15bb"
+    },
+    {
+      "path": "Tools/assetstore-download.cs",
+      "originalSha256": "b17715ac1c3a8fddc272b0be945f41db98eb49adb6a465c78241d3c8bd7a0190",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "b17715ac1c3a8fddc272b0be945f41db98eb49adb6a465c78241d3c8bd7a0190"
+    },
+    {
+      "path": "Tools/assetstore-status.cs",
+      "originalSha256": "27fb9d758902342047e0cfaf983088f115c1ea7505cdab294cd13019a07fdc15",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "27fb9d758902342047e0cfaf983088f115c1ea7505cdab294cd13019a07fdc15"
+    },
+    {
+      "path": "Tools/assetstore-validate.cs",
+      "originalSha256": "419cf6f37852db873ca2e211fa7b090f36df6930d551d75c45bb68553ccd1e93",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "419cf6f37852db873ca2e211fa7b090f36df6930d551d75c45bb68553ccd1e93"
+    },
+    {
+      "path": "Tools/comfy_smoke.py",
+      "originalSha256": "9b6977366dfe1a7650c8b9e009386408a7f9c2b4d9dd7ed4234c4f309afa3852",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "9b6977366dfe1a7650c8b9e009386408a7f9c2b4d9dd7ed4234c4f309afa3852"
+    },
+    {
+      "path": "Tools/download_model_ranges.py",
+      "originalSha256": "fcc7b77c05dd6bb77aa4e9158b3b05517eaa4fb5365db7c02f4114997b0a8eff",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "fcc7b77c05dd6bb77aa4e9158b3b05517eaa4fb5365db7c02f4114997b0a8eff"
+    },
+    {
+      "path": "Tools/download_sd_turbo.py",
+      "originalSha256": "f50d21e863a37ea67146b740f2a82907f1b9796b265275674a6e592e109834b3",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "f50d21e863a37ea67146b740f2a82907f1b9796b265275674a6e592e109834b3"
+    },
+    {
+      "path": "Tools/inspect_unitypackage.py",
+      "originalSha256": "e9f0253066aa77a7697cbc98f2fab9c79ab4a84e9350c8c275b0c6b2a6cd1247",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "e9f0253066aa77a7697cbc98f2fab9c79ab4a84e9350c8c275b0c6b2a6cd1247"
+    },
+    {
+      "path": "Tools/make_probe_asset.py",
+      "originalSha256": "858888fdb6db19fce196f4fd18b893ae1afceb1fd5f81eecfb124a03819b982c",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "858888fdb6db19fce196f4fd18b893ae1afceb1fd5f81eecfb124a03819b982c"
+    },
+    {
+      "path": "Tools/stage_assetstore_sample.py",
+      "originalSha256": "9de8fc109223e285186328f58210e104eda83bcfcf2aa7f85854f5b234fe7cab",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "9de8fc109223e285186328f58210e104eda83bcfcf2aa7f85854f5b234fe7cab"
+    },
+    {
+      "path": "Tools/verify_unity_mcp.py",
+      "originalSha256": "00a2ddd50923877df8d27616ad413c1bb956dab970f4beabceb0ccb1affcc239",
+      "adaptedForPublicExport": true,
+      "publicGitSha256": "2f83b74438af90ff98aa4a479a340b03d2ac306ba2a01c42e9476511758ce557"
+    },
+    {
+      "path": "Project/Assets/Settings/DefaultVolumeProfile.asset",
+      "originalSha256": "463776c51ae49d4fef980e8fd268081b2f505610d79315003faae1acff8f4115",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "463776c51ae49d4fef980e8fd268081b2f505610d79315003faae1acff8f4115"
+    },
+    {
+      "path": "Project/Assets/Settings/DefaultVolumeProfile.asset.meta",
+      "originalSha256": "efbcb026cee6b8e32fdf27018c06b0515296a6ccbb43969e792fea270310700a",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "efbcb026cee6b8e32fdf27018c06b0515296a6ccbb43969e792fea270310700a"
+    },
+    {
+      "path": "Project/Assets/Settings/Mobile_Renderer.asset",
+      "originalSha256": "aa93274c9521fa941170becec9e87c5fa36b8587eefd5eeb5c0eed0d1d4b1dbe",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "aa93274c9521fa941170becec9e87c5fa36b8587eefd5eeb5c0eed0d1d4b1dbe"
+    },
+    {
+      "path": "Project/Assets/Settings/Mobile_Renderer.asset.meta",
+      "originalSha256": "a148ee2b4987b05b8ff7ae5f9bf84916184f77aefddc821dceb551f5a69f8179",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "a148ee2b4987b05b8ff7ae5f9bf84916184f77aefddc821dceb551f5a69f8179"
+    },
+    {
+      "path": "Project/Assets/Settings/Mobile_RPAsset.asset",
+      "originalSha256": "f47ea96f1b820a50cc7ed439aa2b04aa14bdf5c0a44c546e4d49078994234be8",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "f47ea96f1b820a50cc7ed439aa2b04aa14bdf5c0a44c546e4d49078994234be8"
+    },
+    {
+      "path": "Project/Assets/Settings/Mobile_RPAsset.asset.meta",
+      "originalSha256": "53ea46647712c615fd1a3f2e0dddfa8559eeedc649e9a1dbf93ff913de28544c",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "53ea46647712c615fd1a3f2e0dddfa8559eeedc649e9a1dbf93ff913de28544c"
+    },
+    {
+      "path": "Project/Assets/Settings/PC_Renderer.asset",
+      "originalSha256": "3d0b01d8ded3327263b6690be128a3de58d17c514943ae42fe743a3e084a9c79",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "3d0b01d8ded3327263b6690be128a3de58d17c514943ae42fe743a3e084a9c79"
+    },
+    {
+      "path": "Project/Assets/Settings/PC_Renderer.asset.meta",
+      "originalSha256": "b5df8ddb2708c6ed4c133a5ff9ee95a75cc20e4ee3ed6181366a61aedbaf31ec",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "b5df8ddb2708c6ed4c133a5ff9ee95a75cc20e4ee3ed6181366a61aedbaf31ec"
+    },
+    {
+      "path": "Project/Assets/Settings/PC_RPAsset.asset",
+      "originalSha256": "98a1b54e8a2903f3b011f29b9d9769d953df25592587da64d4a827d8db38a60f",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "98a1b54e8a2903f3b011f29b9d9769d953df25592587da64d4a827d8db38a60f"
+    },
+    {
+      "path": "Project/Assets/Settings/PC_RPAsset.asset.meta",
+      "originalSha256": "bb469b9b6f318e9e9bed29c3b2e73e79371c04743c6f95dd6603941f1cd3e53e",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "bb469b9b6f318e9e9bed29c3b2e73e79371c04743c6f95dd6603941f1cd3e53e"
+    },
+    {
+      "path": "Project/Assets/Settings/SampleSceneProfile.asset",
+      "originalSha256": "a8677d4bac051d24caa11cd622e39f968155ee277bfce132274f1de225692fe9",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "a8677d4bac051d24caa11cd622e39f968155ee277bfce132274f1de225692fe9"
+    },
+    {
+      "path": "Project/Assets/Settings/SampleSceneProfile.asset.meta",
+      "originalSha256": "2e23abc214069f0adbf2b2207f1db54be7876629ec2a3681d0f4aa5b61622ef0",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "2e23abc214069f0adbf2b2207f1db54be7876629ec2a3681d0f4aa5b61622ef0"
+    },
+    {
+      "path": "Project/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset",
+      "originalSha256": "cbbf78367c4369ee0077195185c0ca3e64b1d61843f8cc817547f851093b73ab",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "cbbf78367c4369ee0077195185c0ca3e64b1d61843f8cc817547f851093b73ab"
+    },
+    {
+      "path": "Project/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset.meta",
+      "originalSha256": "f61661d8bc8dbe531daf09f6211ef978c7ba145c9207c8e76524396ae0722d7c",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "f61661d8bc8dbe531daf09f6211ef978c7ba145c9207c8e76524396ae0722d7c"
+    },
+    {
+      "path": "Project/Assets/Settings.meta",
+      "originalSha256": "73c8e19843240273facb0af6bdbf430d719e397aded705629594060ce25ce7ad",
+      "adaptedForPublicExport": false,
+      "publicGitSha256": "73c8e19843240273facb0af6bdbf430d719e397aded705629594060ce25ce7ad"
+    }
+  ],
+  "excluded": [
+    "Original Git history",
+    "Credentials and account configuration",
+    "Machine-specific configuration",
+    "Models and third-party assets",
+    "Hunyuan-derived meshes and textures",
+    "Raw licensed animations",
+    "Builds, caches, runtime process state, logs and screenshots"
+  ]
+}

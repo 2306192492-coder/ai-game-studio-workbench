@@ -1,0 +1,12 @@
+if(!UnityEngine.Application.dataPath.Replace('\\','/').EndsWith("/AIStudio/Runtime/AssetStoreValidation/Assets"))throw new System.Exception("Wrong validation project");
+const string root="Assets/_GetStartedWithShaderGraph";
+var paths=UnityEditor.AssetDatabase.FindAssets("",new[]{root}).Select(UnityEditor.AssetDatabase.GUIDToAssetPath).ToArray();
+var graphPaths=paths.Where(p=>p.EndsWith(".shadergraph")).ToArray();
+var shaders=graphPaths.Select(p=>UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.Shader>(p)).ToArray();
+var shaderErrors=shaders.Where(s=>s).SelectMany(s=>UnityEditor.ShaderUtil.GetShaderMessages(s).Where(m=>m.severity.ToString()=="Error").Select(m=>s.name+": "+m.message)).ToArray();
+var scenes=paths.Where(p=>p.EndsWith(".unity")).ToArray();
+var scene=UnityEditor.SceneManagement.EditorSceneManager.OpenScene(root+"/Scenes/Showcase_Scene.unity");
+var objects=scene.GetRootGameObjects().SelectMany(g=>g.GetComponentsInChildren<UnityEngine.Transform>(true)).Select(t=>t.gameObject).ToArray();
+int missing=objects.Sum(g=>UnityEditor.GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(g));
+int meshCount=paths.Count(p=>p.EndsWith(".fbx",System.StringComparison.OrdinalIgnoreCase)&&UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.GameObject>(p));
+return new{passed=graphPaths.Length==11&&shaders.All(s=>s)&&shaderErrors.Length==0&&scenes.Length==3&&missing==0&&meshCount>=250,project=UnityEngine.Application.dataPath,shaderGraphs=graphPaths.Length,loadedShaderGraphs=shaders.Count(s=>s),shaderErrors,scenes,openedScene=scene.path,sceneObjects=objects.Length,missingScripts=missing,importedModels=meshCount,scope="Actual isolated Unity asset import and scene load; not a full sample-game playtest"};

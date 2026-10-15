@@ -1,0 +1,13 @@
+{
+  "python": "C:/AI/hunyuan/.venv/Scripts/python.exe",
+  "comfy_core": "C:/AI/ComfyUI",
+  "checkpoint": "C:/AI/models/hunyuan-mini/model.fp16.safetensors",
+  "checkpoint_full": "C:/AI/models/hunyuan-full/model.fp16.safetensors",
+  "blender": "C:/Program Files/Blender Foundation/Blender/blender.exe",
+  "unity_cli": "unity",
+  "unity_project": "REPLACE_WITH_ABSOLUTE_PROJECT_PATH",
+  "image_primary": "gpt_builtin",
+  "comfy_api_autostart": false,
+  "server_required": false,
+  "modeling_preferred": "hunyuan-full"
+}

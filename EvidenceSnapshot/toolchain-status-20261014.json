@@ -1,0 +1,49 @@
+{
+  "recorded": "2026-10-14",
+  "scope": "Historical local AIStudio validation; not rerun after source-only public export",
+  "unity": {
+    "testsFailed": 0,
+    "version": "6000.6.3f1",
+    "cli": "1.0.0-beta.13",
+    "testsPassed": 6,
+    "renderPipeline": "URP 17.6.0",
+    "pipeline": "0.8.0-exp.1",
+    "mcpInCurrentSession": true,
+    "officialCodexPlugin": "0.1.8-beta",
+    "editorLoginVerifiedForAssetStoreDownload": true
+  },
+  "blender": {
+    "version": "5.2.2 LTS",
+    "freshGlbImport": true,
+    "pythonBatch": true
+  },
+  "imageGeneration": {
+    "comfyPassed": true,
+    "gptPassed": true,
+    "comfyAutoStart": false,
+    "primary": "GPT built-in image_gen",
+    "fallback": "ComfyUI local API"
+  },
+  "windows": {
+    "scope": "Automated actual Windows player; no physical-input/manual-playtest acceptance",
+    "latestRun": "Evidence/latest-windows-run.json",
+    "runtimePassed": true,
+    "buildErrors": 0,
+    "buildWarnings": 1,
+    "gptImageNativeResolution": "1254x1254",
+    "allBuildFileHashes": "Evidence/windows-build-files.json",
+    "buildSucceeded": true,
+    "runtimeErrors": 0
+  },
+  "git": {
+    "localPushAndFreshClonePassed": true,
+    "actualStudioFreshClonePassed": true,
+    "lfs": "3.8.0"
+  },
+  "exclusions": [
+    "Physical input and human playtesting",
+    "Minimum hardware performance",
+    "Commercial release approval",
+    "New clone Unity/Windows validation"
+  ]
+}
